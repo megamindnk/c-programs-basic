@@ -14,15 +14,16 @@ void insert(int data){
 		if((front == -1) && (rear == -1)){//checking empty
 			front = 0;
 			rear= 0;
-			queue[rear++] = data;
+			queue[rear] = data;
 		}
 		else{
-			queue[rear++] = data;
+                        Rear++;
+			queue[rear] = data;
 		}
 	}
 	else if((rear == SIZE-1) && (front != 0)){//checking deleted
 			rear==0;	
-			queue[rear++] = data;
+			queue[rear] = data;
 	}
 	else //telling queue is full
 	printf("queue is full");
